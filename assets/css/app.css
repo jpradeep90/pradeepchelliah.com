@@ -1,0 +1,263 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font-family: "Ubuntu", serif;
+  color: #ffffff;
+  user-select: none;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #2c5364;
+  background: -ms-linear-gradient(
+    -45deg,
+    #2c5364 0%,
+    #203a43 51%,
+    #0f2027 100%
+  );
+  background: linear-gradient(135deg, #2c5364 0%, #203a43 51%, #0f2027 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c5364', endColorstr='#0f2027', GradientType=1 );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* ---- stats.js ---- */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.partA {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+.name {
+  font-family: "Spectral", sans-serif;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+.aboutSmall {
+  font-family: "Ubuntu", serif;
+  color: #89e7ff;
+  font-size: 22px;
+  margin-bottom: -5px;
+  margin-top: 0;
+}
+.aboutMe {
+  width: 60%;
+  margin: 0 auto;
+}
+.aboutMe p {
+  font-family: "Ubuntu", serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 32px;
+}
+.skills {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.skills .heading {
+  font-family: "Spectral", sans-serif;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+.skills .skillList {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.skills .skillList li {
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+  border: 1px solid #d8f1fd73;
+  padding: 7px 12px;
+  border-radius: 25px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+.resume {
+  text-align: center;
+  margin-top: 80px;
+}
+.resume .resumeBtn {
+  padding: 15px 25px;
+  background: transparent;
+  font-size: 16px;
+  border: 1px solid #d8f1fd73;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.resume .resumeBtn:hover {
+  background-color: #d8f1fd73;
+  color: #ffffff;
+}
+.socialIcons {
+  margin: 60px auto;
+  width: 50%;
+}
+.socialIcons ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.socialIcons li {
+  list-style: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 0 3%;
+}
+.socialIcons a {
+  color: #ffffff;
+}
+.socialIcons .socialBtn {
+  position: relative;
+  width: 29px;
+  height: 51px;
+  background-color: transparent;
+  border-top: solid 1px #d8f1fd73;
+  border-bottom: solid 1px #d8f1fd73;
+  z-index: 0;
+  line-height: 50px;
+}
+.socialIcons .socialBtn::before,
+.socialIcons .socialBtn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 36px;
+  height: 36px;
+  -webkit-transform: scaleX(0.6) rotate(45deg);
+  -ms-transform: scaleX(0.6) rotate(45deg);
+  transform: scaleX(0.6) rotate(45deg);
+  top: 7px;
+  background-color: inherit;
+}
+.socialIcons .socialBtn::after {
+  right: 11px;
+  border-bottom: solid 1px #d8f1fd73;
+  border-left: solid 1px #d8f1fd73;
+  border-color: inherit;
+}
+.socialIcons .socialBtn::before {
+  left: 11px;
+  border-top: solid 1px #d8f1fd73;
+  border-right: solid 1px #d8f1fd73;
+  border-color: inherit;
+}
+.image {
+  width: 300px;
+  margin: 0 auto 40px;
+}
+.image img {
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid #ffffff0a;
+}
+
+@media (max-width: 1024px) {
+  .name {
+    font-size: 46px;
+  }
+  .aboutSmall {
+    font-size: 18px;
+  }
+  .socialIcons {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills {
+    width: 70%;
+  }
+  .socialIcons {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .partA {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .aboutSmall {
+    font-size: 16px;
+  }
+  .aboutMe {
+    width: 90%;
+  }
+  .aboutMe p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .skills {
+    width: 90%;
+    text-align: left;
+    margin-top: 40px;
+  }
+  .skills .heading {
+    font-size: 18px;
+  }
+  .skills .skillList li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .resume {
+    margin-top: 30px;
+  }
+  .resume .resumeBtn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .socialIcons {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .socialIcons li {
+    margin: 0 4%;
+    font-size: 20px;
+  }
+  .socialIcons .socialBtn {
+    width: 23px;
+    height: 38px;
+    line-height: 40px;
+  }
+  .socialIcons .socialBtn::before,
+  .socialIcons .socialBtn::after {
+    width: 26px;
+    height: 27px;
+    top: 5px;
+  }
+  .socialIcons .socialBtn::before {
+    left: 10px;
+  }
+  .socialIcons .socialBtn::after {
+    right: 10px;
+  }
+}
